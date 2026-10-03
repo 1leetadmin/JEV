@@ -1,0 +1,22 @@
+{
+  "name": "jev",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TypeScript starter for TypeSafe AI's Jev decision model via Vercel AI Gateway",
+  "type": "module",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "triage": "tsx --env-file-if-exists=.env src/examples/triage.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ai": "^7.0.127"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
