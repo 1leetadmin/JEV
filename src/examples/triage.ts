@@ -17,6 +17,7 @@ const { answers, usage } = await askJev(ticket, {
       billing: 'Payment or subscription issues',
       technical: 'Bugs or integration problems',
       sales: 'Pricing or account questions',
+      other: 'None of the above, or not a support request',
     },
   },
   frustration: {
@@ -31,6 +32,7 @@ const { answers, usage } = await askJev(ticket, {
 });
 
 // Code stays in control: Jev answers narrow questions, your logic decides.
+// These thresholds are placeholders; tune them on your own labeled tickets.
 const priority = answers.urgent.probability >= 0.7 || answers.frustration.score >= 1.5 ? 'high' : 'normal';
 
 console.log({
