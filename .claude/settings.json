@@ -9,5 +9,9 @@
   },
   "enabledPlugins": {
     "typesafe@typesafe-ai": true
+  },
+  "model": "sonnet",
+  "env": {
+    "CLAUDE_CODE_SUBAGENT_MODEL": "haiku"
   }
 }
